@@ -12,8 +12,6 @@ set color of RatingBar for both on/off modes
 
 Add jitpack to your project build.gradle: 
 
-Say what the step will be
-
 ```
 allprojects {
     repositories {
