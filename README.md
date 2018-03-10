@@ -61,3 +61,6 @@ LinearLayout linearLayout = findViewById(R.id.linear_layout); // parent of Ratin
         fleximageRatingbar.setOffColor(R.color.GRAY); // set image drawable for stars of RatingBar, when they are on
         fleximageRatingbar.display(this, linearLayout); // apply the changes and display the RatingBar
 ```
+
+### Screenshot
+![FleximageRatingBar_App](http://appestan.com/msc/FleximageRatingBar/FleximageRatingBar_App.png)
