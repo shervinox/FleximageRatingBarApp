@@ -18,25 +18,25 @@ import android.widget.RelativeLayout;
 public class FleximageRatingbar extends LinearLayout {
     private static final String TAG = "FleximageRatingbar";
     private Context context;
-    private static int widthOfEachStarInDp = 30;
-    private static int heightOfEachStarInDp = 30;
+    private int widthOfEachStarInDp = 30;
+    private int heightOfEachStarInDp = 30;
     private static int paddingInBetween = 0;
     private static int orientation = LinearLayout.VERTICAL;
-    private static int onMode_imageDrawable = R.drawable.ic_star_on;
-    private static int offMode_imageDrawable = R.drawable.ic_star_off;
-    private static boolean onModeColorIsSet = false;
-    private static boolean offModeColorIsSet = false;
-    private static int onColor = R.color.BLUE;
-    private static int offColor = R.color.GRAY;
+    private int onMode_imageDrawable = R.drawable.ic_star_on;
+    private int offMode_imageDrawable = R.drawable.ic_star_off;
+    private boolean onModeColorIsSet = false;
+    private boolean offModeColorIsSet = false;
+    private int onColor = R.color.BLUE;
+    private int offColor = R.color.GRAY;
     private int ratingRate;
 
 
     public void setWidthOfEachStarInDp(int widthInDp) {
-        FleximageRatingbar.widthOfEachStarInDp = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, widthInDp, getResources().getDisplayMetrics());
+        this.widthOfEachStarInDp = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, widthInDp, getResources().getDisplayMetrics());
     }
 
     public void setHeightOfEachStarInDp(int heightInDp) {
-        FleximageRatingbar.heightOfEachStarInDp = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, heightInDp, getResources().getDisplayMetrics());
+        this.heightOfEachStarInDp = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, heightInDp, getResources().getDisplayMetrics());
     }
 
     public void setPaddingInBetween(int paddingInBetween) {
@@ -52,21 +52,21 @@ public class FleximageRatingbar extends LinearLayout {
     }
 
     public void setOnMode_imageDrawable(int onMode_imageDrawable) {
-        FleximageRatingbar.onMode_imageDrawable = onMode_imageDrawable;
+        this.onMode_imageDrawable = onMode_imageDrawable;
     }
 
     public void setOffMode_imageDrawable(int offMode_imageDrawable) {
-        FleximageRatingbar.offMode_imageDrawable = offMode_imageDrawable;
+        this.offMode_imageDrawable = offMode_imageDrawable;
     }
 
     public void setOnColor(int onColor) {
         onModeColorIsSet = true;
-        FleximageRatingbar.onColor = onColor;
+        this.onColor = onColor;
     }
 
     public void setOffColor(int offColor) {
         offModeColorIsSet = true;
-        FleximageRatingbar.offColor = offColor;
+        this.offColor = offColor;
     }
 
     public FleximageRatingbar(Context context) {
@@ -92,8 +92,6 @@ public class FleximageRatingbar extends LinearLayout {
     }
 
     private void display(LinearLayout view) {
-        LinearLayout containerLayout = new LinearLayout(context);
-        containerLayout.setOrientation(LinearLayout.VERTICAL);
 
         ImageView imageView_0 = new ImageView(context);
         ImageView imageView_1 = new ImageView(context);
