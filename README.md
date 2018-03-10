@@ -63,4 +63,4 @@ LinearLayout linearLayout = findViewById(R.id.linear_layout); // parent of Ratin
 ```
 
 ### Screenshot
-![FleximageRatingBar_App](http://appestan.com/msc/FleximageRatingBar/FleximageRatingBar_App.png)
+![FleximageRatingBar_App](http://joyfulsilence.com/msc/FleximageRatingBar/FleximageRatingBar_App.png)
